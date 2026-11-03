@@ -1,0 +1,23 @@
+# Python environments
+.venv/
+venv/
+
+# Local image data and generated indexes
+data/raw/
+data/processed/
+indexes/
+
+# Personal run logs
+logs/
+.log/
+*.log
+*.out
+run-logs/
+
+# Python cache and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
