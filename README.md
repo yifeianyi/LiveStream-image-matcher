@@ -21,11 +21,23 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
+## D1：标签契约与校验
+
+校验样例标签文件：
+
+```powershell
+python scripts\validate_labels.py
+```
+
+校验函数位于 `src/labels.py`，测试位于 `tests/test_labels.py`。
+
 ## 运行测试
 
 ```powershell
-python -m pytest
+python -m pytest -q
 ```
+
+测试必须显示实际测试数量和通过结果；`collected 0 items` 不算通过。
 
 ## 数据与 Git 约定
 
